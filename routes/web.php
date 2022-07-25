@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +22,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/form', [FormController::class, 'index'])->name('form.index');
+Route::get('/form/create', [FormController::class, 'create'])->name('form.create');
+Route::post('/form/store', [FormController::class, 'store'])->name('form.store');

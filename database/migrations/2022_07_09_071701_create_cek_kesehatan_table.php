@@ -19,7 +19,14 @@ class CreateCekKesehatanTable extends Migration
 			$table->text('alamat')->nullable();
 			$table->integer('umur')->nullable();
 			$table->string('nama_kk')->nullable();
-			$table->
+			$table->integer('tensi')->nullable();
+            $table->integer('nadi')->nullable();
+            $table->integer('chol')->nullable();
+            $table->integer('suhu')->nullable();
+            $table->integer('au')->nullable();
+            $table->integer('gds')->nullable();
+            $table->integer('so2')->nullable();
+            $table->text('lain_lain')->nullable();
             $table->timestamps();
         });
     }
