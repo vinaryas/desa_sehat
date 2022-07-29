@@ -33,6 +33,12 @@ class AppServiceProvider extends ServiceProvider
                 'url' => route('home'),
                 'icon' => 'fas fa-tachometer-alt',
             ]);
+
+            $event->menu->add([
+                'text' => 'Form',
+                'url' => route('form.index'),
+                'icon' => 'fas fa-file',
+            ]);
 		});
     }
 }
