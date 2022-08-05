@@ -27,4 +27,19 @@ class Cek_kesehatanService
     {
         return $this->Cek_kesehatan->where('id', $id);
     }
+
+    public function getCholesterol()
+    {
+        return $this->Cek_kesehatan->where('chol', '>=' , 200);
+    }
+
+    public function getDemam()
+    {
+        return $this->Cek_kesehatan->where('suhu', '>=' , 37);
+    }
+
+    // public function getDarahTinggi()
+    // {
+    //     return $this->Cek_kesehatan->where('suhu', '>=' , 37);
+    // }
 }

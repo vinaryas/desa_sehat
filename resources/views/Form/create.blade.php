@@ -22,35 +22,48 @@
                 </div>
                 <div class="col-md-6">
                     <label> Umur </label>
-                    <input type="number" name="umur" class="form-control form-control-sm">
+                    <input type="text" name="umur" class="form-control form-control-sm" max="200" maxlength="3">
                 </div>
                 <div class="col-md-6">
                     <label> Nama KK </label>
                     <input type="text"  name="nama_kk"class="form-control form-control-sm">
                 </div>
-                <div class="col-md-3">
-                    <label> Tensi </label>
-                    <input type="number" name="tensi" class="form-control form-control-sm">
+                <div class='col-md-6'>
+                    <label class='row justify-content-center'> Tensi </label>
+                    <div class='row'>
+                        <div class="col-md-3">
+                            <label> Tensi Darah Sistolik </label>
+                            <input type="text" name="sistolik" class="form-control form-control-sm" max="200" maxlength="3">
+                        </div>
+                        <div class="col-md-3">
+                            <label> Tensi Darah Diastolik </label>
+                            <input type="text" name="diastolik" class="form-control form-control-sm" max="100" maxlength="3">
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-3">
                     <label> Nadi </label>
-                    <input type="number" name="nadi" class="form-control form-control-sm">
+                    <input type="text" name="nadi" class="form-control form-control-sm" max="200" maxlength="3">
+                </div>
+                <div class="col-md-3">
+                    <label> Kolesterol </label>
+                    <input type="text" name="chol" class="form-control form-control-sm" max="300" maxlength="3">
                 </div>
                 <div class="col-md-3">
                     <label> Suhu </label>
-                    <input type="number" name="suhu" class="form-control form-control-sm">
+                    <input type="text" name="suhu" class="form-control form-control-sm" max="40" maxlength="2">
                 </div>
                 <div class="col-md-3">
-                    <label> AU </label>
-                    <input type="number" name="au" class="form-control form-control-sm">
+                    <label> Auris Utro </label>
+                    <input type="text" name="au" class="form-control form-control-sm">
                 </div>
                 <div class="col-md-3">
-                    <label> GDS </label>
-                    <input type="number" name="gds" class="form-control form-control-sm">
+                    <label> Gula Darah </label>
+                    <input type="text" name="gds" class="form-control form-control-sm" max="300" maxlength="3">
                 </div>
                 <div class="col-md-3">
-                    <label> SO2 </label>
-                    <input type="number" name="so2" i class="form-control">
+                    <label> SO2 dalam tubuh </label>
+                    <input type="text" name="so2" i class="form-control form-control-sm">
                 </div>
                 <div class="col-md-6">
                     <label> Lain-lain </label>

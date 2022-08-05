@@ -19,7 +19,8 @@ class CreateCekKesehatanTable extends Migration
 			$table->text('alamat')->nullable();
 			$table->integer('umur')->nullable();
 			$table->string('nama_kk')->nullable();
-			$table->integer('tensi')->nullable();
+			$table->integer('sistolik')->nullable();
+            $table->integer('diastolik')->nullable();
             $table->integer('nadi')->nullable();
             $table->integer('chol')->nullable();
             $table->integer('suhu')->nullable();
