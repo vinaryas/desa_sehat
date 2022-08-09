@@ -13,7 +13,7 @@
             <a href="{{ route('form.create') }}" class="btn btn-info my-3"><i class="fas fa-file"></i> Form </a>
         </div>
         <div class="">
-            <a href="{{ route('form.download') }}" class="btn btn-success my-3" target="_blank">EXPORT EXCEL</a>
+            <a href="{{ route('form.download') }}" class="btn btn-success my-3" target="_blank">DOWNLOAD EXCEL</a>
         </div>
         <table class="table table-responsive table-bordered table-striped table-sm" id="t_periksa" style="max-width: 100%">
             <thead>

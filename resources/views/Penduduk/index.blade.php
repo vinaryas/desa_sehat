@@ -35,7 +35,7 @@
     <div class="card-body">
         <div class="">
             <button type="button" class="btn btn-primary mr-5" data-toggle="modal" data-target="#importExcel">
-                IMPORT EXCEL
+                UPLOAD EXCEL
             </button>
         </div>
         <br>
