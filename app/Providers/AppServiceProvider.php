@@ -39,6 +39,12 @@ class AppServiceProvider extends ServiceProvider
                 'url' => route('form.index'),
                 'icon' => 'fas fa-file',
             ]);
+
+            $event->menu->add([
+                'text' => 'Penduduk',
+                'url' => route('penduduk.index'),
+                'icon' => 'fas fa-users',
+            ]);
 		});
     }
 }

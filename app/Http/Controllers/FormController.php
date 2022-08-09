@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Exports\HasilPemeriksaanExport;
+
 use App\Services\Support\Cek_kesehatanService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Maatwebsite\Excel\Facades\Excel;
 
 class FormController extends Controller
 {
@@ -53,7 +53,7 @@ class FormController extends Controller
         }
     }
 
-    public function excel(Request $request)
+    public function downloadExcel(Request $request)
     {
         ini_set('max_execution_time', 3600);
 		ini_set('memory_limit', '2048M');
