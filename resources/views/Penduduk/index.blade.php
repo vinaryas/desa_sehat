@@ -39,7 +39,7 @@
             </button>
         </div>
         <br>
-        <table class="table table-sm" id="t_penduduk" style="width: 100%;">
+        <table class="table table-responsive table-sm" id="t_penduduk" style="width: 100%;">
             <thead>
                 <tr>
                     <th> NIK </th>
