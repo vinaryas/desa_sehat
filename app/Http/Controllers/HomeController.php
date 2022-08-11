@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Services\Support\Cek_kesehatanService;
+use App\Services\Support\PendudukService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 
@@ -27,15 +28,15 @@ class HomeController extends Controller
     {
         $countPemeriksaan = 0;
         $countChol = 0;
-        $countDarahTinggi = 0;
+        $countPenduduk = 0;
         $countDemam = 0;
         $thisMonth = Carbon::now()->month;
 
         $countPemeriksaan = Cek_kesehatanService::all($thisMonth)->get()->count();
         $countChol = Cek_kesehatanService::getCholesterol($thisMonth)->get()->count();
         $countDemam = Cek_kesehatanService::getDemam($thisMonth)->get()->count();
-         // $countDarahTinggi = Cek_kesehatanService::getDemam()->get()->count();
+        $countPenduduk = PendudukService::all()->get()->count();
 
-        return view('home', compact('countPemeriksaan', 'countChol', 'countDemam'));
+        return view('home', compact('countPemeriksaan', 'countChol', 'countDemam', 'countPenduduk'));
     }
 }
