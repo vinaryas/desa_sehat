@@ -24,24 +24,7 @@ class FormController extends Controller
         DB::beginTransaction();
 
         try{
-            $data = [
-            'nama'=>$request->nama,
-			'alamat'=>$request->alamat,
-			'umur'=>$request->umur,
-			'nama_kk'=>$request->nama_kk,
-			'sistolik'=>$request->sistolik,
-            'diastolik'=>$request->diastolik,
-            'nadi'=>$request->nadi,
-            'chol'=>$request->chol,
-            'suhu'=>$request->suhu,
-            'au'=>$request->au,
-            'gds'=>$request->gds,
-            'so2'=>$request->so2,
-            'lain_lain'=>$request->lain_lain,
-            'created_at' => now(),
-            'updated_at' => now(),
-            ];
-            $storeData = Cek_kesehatanService::store($data);
+            $storeData = Cek_kesehatanService::store($request->except('_token'));
 
             DB::commit();
 

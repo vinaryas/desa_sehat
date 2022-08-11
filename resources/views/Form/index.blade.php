@@ -9,11 +9,9 @@
 
 <div class="card">
     <div class="card-body">
-        <div class="float-right">
-            <a href="{{ route('form.create') }}" class="btn btn-info my-3"><i class="fas fa-file"></i> Form </a>
-        </div>
         <div class="">
-            <a href="{{ route('form.download') }}" class="btn btn-success my-3" target="_blank">DOWNLOAD EXCEL</a>
+			<a href="{{ route('form.create') }}" class="btn btn-info my-3"><i class="fas fa-plus"></i> Data Kesehatan </a>
+            <a href="{{ route('form.download') }}" class="btn btn-success my-3" target="_blank"><i class="fas fa-file-excel"></i> Excel</a>
         </div>
         <table class="table table-responsive table-bordered table-striped table-sm" id="t_periksa" style="max-width: 100%">
             <thead>
@@ -21,7 +19,6 @@
                     <th> Nama </th>
                     <th> Alamat </th>
                     <th> umur </th>
-                    <th> Nama KK </th>
                     <th> Tensi (mmHg)</th>
                     <th> Nadi (denyut/menit)</th>
                     <th> Colesterol (mg/dL)</th>
@@ -36,10 +33,9 @@
             <tbody>
                 @foreach ($forms as $form)
                 <tr>
-                    <td>{{$form->nama}}</td>
-                    <td>{{$form->alamat}}</td>
+                    <td>{{$form->penduduk->nama}}</td>
+                    <td>{{$form->penduduk->alamat}}</td>
                     <td>{{$form->umur}}</td>
-                    <td>{{$form->nama_kk}}</td>
                     <td>{{$form->sistolik}}/ {{$form->diastolik}}</td>
                     <td>{{$form->nadi}}</td>
                     <td>{{$form->chol}}</td>

@@ -15,7 +15,7 @@ class Cek_kesehatanService
 
     public function all()
     {
-        return $this->Cek_kesehatan->query();
+        return $this->Cek_kesehatan->query()->with('penduduk');
     }
 
     public function store($data)

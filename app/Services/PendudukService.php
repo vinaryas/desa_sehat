@@ -18,4 +18,21 @@ class PendudukService
     {
         return $this->Penduduk->query();
     }
+
+	public function find($nik)
+	{
+		return $this->all()->where('id', $nik);
+	}
+
+	public function select($data)
+	{
+		$model = $this->Penduduk;
+
+		$model = $model->query();
+
+		$model = $model->where('id', 'like', '%' . $data->input('input') . '%')
+						->orWhere('nama', 'like', '%' . $data->input('input') . '%')->limit(50);
+
+		return $model;
+	}
 }

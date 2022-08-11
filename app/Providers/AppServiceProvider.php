@@ -35,7 +35,7 @@ class AppServiceProvider extends ServiceProvider
             ]);
 
             $event->menu->add([
-                'text' => 'Form',
+                'text' => 'Cek Kesehatan',
                 'url' => route('form.index'),
                 'icon' => 'fas fa-file',
             ]);

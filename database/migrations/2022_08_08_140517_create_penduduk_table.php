@@ -17,11 +17,12 @@ class CreatePendudukTable extends Migration
             $table->id();
             $table->text('alamat')->nullable();
             $table->string('dusun')->nullable();
-            $table->integer('rw')->nullable();
-            $table->integer('rt')->nullable();
+            $table->string('rw')->nullable();
+            $table->string('rt')->nullable();
             $table->string('nama');
             $table->bigInteger('no_kk');
             $table->bigInteger('nik');
+            $table->date('tanggal_lahir');
             $table->timestamps();
         });
     }

@@ -15,9 +15,8 @@ class CreateCekKesehatanTable extends Migration
     {
         Schema::create('cek_kesehatan', function (Blueprint $table) {
             $table->id();
-			$table->string('nama')->nullable();
-			$table->text('alamat')->nullable();
-			$table->integer('umur')->nullable();
+			$table->bigInteger('nik')->nullable();
+			$table->string('umur')->nullable();
 			$table->string('nama_kk')->nullable();
 			$table->integer('sistolik')->nullable();
             $table->integer('diastolik')->nullable();

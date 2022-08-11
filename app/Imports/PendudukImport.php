@@ -4,8 +4,9 @@ namespace App\Imports;
 
 use App\Models\Penduduk;
 use Maatwebsite\Excel\Concerns\ToModel;
+use Maatwebsite\Excel\Concerns\WithHeadingRow;
 
-class PendudukImport implements ToModel
+class PendudukImport implements ToModel, WithHeadingRow
 {
     /**
     * @param array $row
@@ -15,13 +16,15 @@ class PendudukImport implements ToModel
     public function model(array $row)
     {
         return new Penduduk([
-            'alamat' => $row[1],
-            'dusun' => $row[2],
-            'rw' => $row[3],
-            'rt' => $row[4],
-            'nama' => $row[5],
-            'no_kk' => $row[6],
-            'nik' => $row[7],
+            'id' => $row['nik'],
+            'alamat' => $row['alamat'],
+            'dusun' => $row['dusun'],
+            'rw' => $row['rw'],
+            'rt' => $row['rt'],
+            'nama' => $row['nama'],
+            'no_kk' => $row['no_kk'],
+            'nik' => $row['nik'],
+            'tanggal_lahir' => $row['tanggallahir'],
         ]);
     }
 }

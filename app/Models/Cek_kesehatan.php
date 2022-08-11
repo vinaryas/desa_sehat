@@ -11,4 +11,11 @@ class Cek_kesehatan extends Model
 
     protected $table = 'cek_kesehatan';
     protected $guarded = [];
+
+	public function penduduk()
+	{
+		return $this->hasOne(Penduduk::class, 'id', 'nik');
+	}
+
+	
 }

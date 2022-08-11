@@ -101,6 +101,15 @@
         @endif
     @endif
 
+	<script>
+		$(document).ready(function () {
+			$('.select2').select2({
+				placeholder: '...',
+				allowClear: true
+			});
+		});
+	</script>
+
     {{-- Custom Scripts --}}
     @yield('adminlte_js')
 

@@ -31,5 +31,7 @@ Route::post('/form/store', [FormController::class, 'store'])->name('form.store')
 Route::get('/form/export_excel', [FormController::class, 'downloadExcel'])->name('form.download');
 
 Route::get('/penduduk', [PendudukController::class, 'index'])->name('penduduk.index');
+Route::get('/penduduk/select2', [PendudukController::class, 'select2'])->name('penduduk.select2');
+Route::get('/penduduk/find', [PendudukController::class, 'find'])->name('penduduk.find');
 Route::post('penduduk/import_excel', [PendudukController::class, 'uploadExcel'])->name('penduduk.upload');
 

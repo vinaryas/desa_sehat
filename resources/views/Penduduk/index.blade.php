@@ -39,30 +39,26 @@
             </button>
         </div>
         <br>
-        <table class="table table-responsive table-bordered table-striped table-sm" id="t_periksa" style="max-width: 100%">
+        <table class="table table-sm" id="t_penduduk" style="width: 100%;">
             <thead>
                 <tr>
-                    <th> ID </th>
+                    <th> NIK </th>
+                    <th> Nomor KK</th>
+                    <th> Nama </th>
                     <th> Alamat </th>
                     <th> Dusun </th>
-                    <th> RT </th>
-                    <th> RW </th>
-                    <th> Nama </th>
-                    <th> Nomor KK</th>
-                    <th> NIK</th>
+                    <th> Tanggal Lahir </th>
                 </tr>
             </thead>
             <tbody>
                 @foreach ($penduduk as $data)
                 <tr>
                     <td>{{$data->id }}</td>
+                    <td>{{$data->no_kk}}</td>
+                    <td>{{$data->nama}}</td>
                     <td>{{$data->alamat}}</td>
                     <td>{{$data->dusun}}</td>
-                    <td>{{$data->rt}}</td>
-                    <td>{{$data->rw}}</td>
-                    <td>{{$data->nama}}</td>
-                    <td>{{$data->no_kk}}</td>
-                    <td>{{$data->nik}}</td>
+                    <td>{{$data->tanggal_lahir}}</td>
                 </tr>
                 @endforeach
             </tbody>
@@ -78,13 +74,13 @@
 
 @section('js')
 <script>
-    $(document).ready(function() {
-    var table = $('#t_periksa').DataTable( {
-        rowReorder: {
-            selector: 'td:nth-child(2)'
-        },
-        responsive: true
-    } );
-    } );
+	$(document).ready(function() {
+		var table = $('#t_penduduk').DataTable( {
+			rowReorder: {
+				selector: 'td:nth-child(2)'
+			},
+			responsive: true
+		} );
+	} );
 </script>
 @stop
