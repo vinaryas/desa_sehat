@@ -33,37 +33,37 @@
                     <div class='row'>
                         <div class="col-md-6">
                             <label> Tensi Darah Sistolik </label>
-                            <input type="number" name="sistolik" class="form-control form-control-sm" max="200" maxlength="3">
+                            <input type="number" step="0.001" name="sistolik" class="form-control form-control-sm" max="200" maxlength="3">
                         </div>
                         <div class="col-md-6">
                             <label> Tensi Darah Diastolik </label>
-                            <input type="number" name="diastolik" class="form-control form-control-sm" max="100" maxlength="3">
+                            <input type="number" step="0.001" name="diastolik" class="form-control form-control-sm" max="100" maxlength="3">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <label> Nadi </label>
-                    <input type="number" name="nadi" class="form-control form-control-sm" max="200" maxlength="3">
+                    <input type="number" step="0.001" name="nadi" class="form-control form-control-sm" max="200" maxlength="3">
                 </div>
                 <div class="col-md-3">
                     <label> Kolesterol </label>
-                    <input type="number" name="chol" class="form-control form-control-sm" max="300" maxlength="3">
+                    <input type="number" step="0.001" name="chol" class="form-control form-control-sm" max="300" maxlength="3">
                 </div>
                 <div class="col-md-3">
                     <label> Suhu </label>
-                    <input type="number" name="suhu" class="form-control form-control-sm" max="40" maxlength="2">
+                    <input type="number" step="0.001" name="suhu" class="form-control form-control-sm" max="40" maxlength="2">
                 </div>
                 <div class="col-md-3">
                     <label> Auris Utro </label>
-                    <input type="number" name="au" class="form-control form-control-sm">
+                    <input type="number" step="0.001" name="au" class="form-control form-control-sm">
                 </div>
                 <div class="col-md-3">
                     <label> Gula Darah </label>
-                    <input type="number" name="gds" class="form-control form-control-sm" max="300" maxlength="3">
+                    <input type="number" step="0.001" name="gds" class="form-control form-control-sm" max="300" maxlength="3">
                 </div>
                 <div class="col-md-3">
                     <label> SO2 dalam tubuh </label>
-                    <input type="number" name="so2" i class="form-control form-control-sm">
+                    <input type="number" step="0.001" name="so2" class="form-control form-control-sm">
                 </div>
                 <div class="col-md-12">
                     <label> Lain-lain </label>
